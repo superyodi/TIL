@@ -167,6 +167,10 @@ Suspended: 외부에서 resume 해주어야 Active
 
 
 
-### 프로세스의 상태도
+### 프로세스의 상태도 (시분할 시스템에서)
 
 <img width="933" alt="스크린샷 2021-04-06 오후 8 24 33" src="https://user-images.githubusercontent.com/31922389/113704446-165a7100-9717-11eb-9fa0-a641d00138c4.png">
+
+
+
+
