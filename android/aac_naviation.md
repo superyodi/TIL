@@ -27,7 +27,7 @@
   + 전개도
 + NavHost
   + 탐색 그래프에서 대상(NavHostFragment)을 표시하는 빈 컨테이너
-  + ![IMG_42925F393E77-1](/Users/superyodi/Downloads/IMG_42925F393E77-1.jpeg)
+  + ![IMG_42925F393E77-1](https://user-images.githubusercontent.com/31922389/115100539-46f0a500-9f78-11eb-9d5a-4076a2138c2b.jpeg)
 + NavController
   + NavHost에서 앱 탐색 관리 객체
   + NavController가 NavHost에 적절한 대상(fragment)를 표시한다.

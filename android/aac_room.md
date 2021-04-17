@@ -154,7 +154,7 @@ class Converters {
 
 
 
-![스크린샷 2021-02-10 오후 7.00.44](/Users/superyodi/Library/Application Support/typora-user-images/스크린샷 2021-02-10 오후 7.00.44.png)
+![스크린샷 2021-02-10 오후 7 00 44](https://user-images.githubusercontent.com/31922389/115100561-612a8300-9f78-11eb-918d-db4f7a31e4ba.png)
 
  (출처: https://www.nextree.co.kr/p5864/)
 

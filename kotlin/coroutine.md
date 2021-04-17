@@ -77,3 +77,10 @@ About `login()`
 
 
 
+> 추가공부
+
+https://developer.android.com/kotlin/coroutines/coroutines-adv?hl=ko
+
+
+
+이거 정리

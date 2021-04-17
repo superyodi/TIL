@@ -10,7 +10,7 @@
 ## Flow와 Live Data
 
 + Flow
-  + 코틀린에서 **data 상태**를 bserve
+  + 코틀린에서 **data 상태**를 observe
 + live data
   + android에서 **view 역할을 하는 component의 상태**를 observe하는 data
 
