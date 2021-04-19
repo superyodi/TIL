@@ -393,10 +393,104 @@ P(S)에서 자원을 내놓았는데도 0하라는건  위에서 잠들어있는
 
 
 
-
-
-
-
 > 추가로 봐야 할 것
 >
 > https://asfirstalways.tistory.com/348
+
+
+
+
+
+---
+
+### Classical Problem of Synchronization
+
+
+
+#### Bounded-Buffer Problem (Producer-Customer Problem)
+
+버퍼의 크기가 유한한 환경에서 생산자-소비자 문제
+
++ 생산자에게 자원: 비어있는 버퍼의 갯수
++ 소비자에게 자원: 채워져있는 버퍼의 갯수
+
+
+
+<img width="926" alt="스크린샷 2021-04-19 오후 6 58 01" src="https://user-images.githubusercontent.com/31922389/115224887-69d1b380-a148-11eb-9c2e-1fc2f013ed72.png">
+
+
+
+**Shared data**
+
+버퍼 자체 및 버퍼 조작 변수(empty/full 버퍼를 가리키는 pointer)
+
+
+
+**Synchronization variables**
+
+1. mutual exclusion
+
+   + 데이터 입출력때 공유버퍼에 lock을 걸고 풀기 위해
+
+   +  Need **binary semaphore**
+      + shared data의 mutal exclution(상호배제)을 위해
+
+2. resource count
+
+   +  Need **integer semaphore** 
+      + 남은 full/empty buffer의 개수 표시
+
+
+
+<img width="820" alt="스크린샷 2021-04-19 오후 7 05 04" src="https://user-images.githubusercontent.com/31922389/115224980-8837af00-a148-11eb-844b-d8ce023da50a.png">
+
+  
+
+
+
+#### Readers and Writers Problem
+
++ 한 프로세스가 DB에 <u>write 중일때 다른 process가 접근하면 안된다.</u>
+
++ <u>read는 동시에 여럿이 해도 된다.</u> 
+
+  
+
+<img width="872" alt="스크린샷 2021-04-19 오후 7 14 14" src="https://user-images.githubusercontent.com/31922389/115225086-a4d3e700-a148-11eb-8823-49d33e673495.png">
+
+reader의 경우 읽을때도 lock을 걸어야하는데 (writer의 접근을 막기 위해)
+
+다른 reader들도 접근할 수 없는 문제가 발생한다. 그래서 readcount라는 공유변수를 둬서 제일 처음 reader가 접근하는 상황(readcount == 1)에서 P(db)로 db에 lock을 걸어주고 그게 아니라면 lock을 걸지않는다. 
+
+하지만 데이터 일관성을 위해 readcount 자체에도 lock을 걸어줄 필요가 있다. 그래서 사용하는게 *mutex*
+
+내가 마지막 reader일땐 나가면서 db에 건 lock을 풀어줘야한다. 그래서 if (readcount == 0) V(db) 한다.
+
+
+
+**Shared data**
+
++ DB 자체
++ readcount (현재 DB에 접근중인 Reader의 수)
+
+
+
+**Synchronization variables**
+
++ mutex
+  + 공유변수 readcount를 접근하는 코드(critical section)의 mutual exclusion 보장을 위해 사용
++ db (DB접근을 위한 변수)
+  + Reader와 Writer가 공유 DB에 올바르게 접근하게 하는 역할 (binary type)
+
+
+
+**Starvation 발생 가능**
+
+writer와 reader가 동시에 왔는데 writer가 reader가 n개 있을때 n개가 다 읽을때까지 주구장창 기다려야한다.
+
+그 사이에 writer 굶어주거.... :- (
+
+
+
+해결책) 우선순위 큐 또는 신호등처럼 일정시간을 주고 읽도록 하는 방법 등등
+
