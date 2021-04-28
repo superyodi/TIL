@@ -9,7 +9,7 @@
 
 
 ## Framework
-+ [앤드로이드](https://github.com/superyodi/TIL/tree/master/android)
++ [Android](https://github.com/superyodi/TIL/tree/master/android)
 
 
 ## Language
