@@ -3,23 +3,23 @@
 
 
 ## CS
-+ [알고리뜸] (https://github.com/superyodi/TIL/tree/master/algorithm)
-+ [자료구조] (https://github.com/superyodi/TIL/tree/master/data-structure)
-+ [OS] (https://github.com/superyodi/TIL/tree/master/os)
++ [알고리뜸](https://github.com/superyodi/TIL/tree/master/algorithm)
++ [자료구조](https://github.com/superyodi/TIL/tree/master/data-structure)
++ [OS](https://github.com/superyodi/TIL/tree/master/os)
 
 
 ## Framework
-+ [앤드로이드] (https://github.com/superyodi/TIL/tree/master/android)
++ [앤드로이드](https://github.com/superyodi/TIL/tree/master/android)
 
 
 ## Language
-+ [Python] (https://github.com/superyodi/TIL/tree/master/python)
-+ [Kotlin] (https://github.com/superyodi/TIL/tree/master/kotlin)
++ [Python](https://github.com/superyodi/TIL/tree/master/python)
++ [Kotlin](https://github.com/superyodi/TIL/tree/master/kotlin)
 
 
 ## ETC
-+ [GIT] (https://github.com/superyodi/TIL/tree/master/git)
-+ [Problem Solving] (https://github.com/superyodi/TIL/tree/master/problem-solving)
++ [GIT](https://github.com/superyodi/TIL/tree/master/git)
++ [Problem Solving](https://github.com/superyodi/TIL/tree/master/problem-solving)
 
 
 ---
