@@ -54,7 +54,7 @@
   val exp01 = 127 // Int 형으로 추론
   val exp02 = 123L // 접미사 L을 사용해 Long형으로 추론
   val exp03 = 0x0F // 접두사 0x를 사용해 16진 표기가 사용된 Int형으로 추론
-val exp04 = 0b00001011 // 접두사 0b를 사용해 2진 표기가 사용된 Int형으로 추론
+  val exp04 = 0b00001011 // 접두사 0b를 사용해 2진 표기가 사용된 Int형으로 추론
   ```
   
 + 작은 값의 사용
@@ -91,7 +91,7 @@ val exp04 = 0b00001011 // 접두사 0b를 사용해 2진 표기가 사용된 Int
 
 ### 실수형 
 
-<img width="539" alt="스크린샷 2021-06-04 오전 10 26 54" src="https://user-images.githubusercontent.com/31922389/120738349-b02d7700-c52a-11eb-9714-b3e7b438cb66.png">![스크린샷 2021-06-04 오전 10.26.54](/Users/superyodi/Library/Application Support/typora-user-images/스크린샷 2021-06-04 오전 10.26.54.png)
+<img width="539" alt="스크린샷 2021-06-04 오전 10 26 54" src="https://user-images.githubusercontent.com/31922389/120738349-b02d7700-c52a-11eb-9714-b3e7b438cb66.png">
 
 
 
