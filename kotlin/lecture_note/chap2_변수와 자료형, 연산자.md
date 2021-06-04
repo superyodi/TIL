@@ -91,7 +91,7 @@
 
 ### 실수형 
 
-<img width="539" alt="스크린샷 2021-06-04 오전 10 26 54" src="https://user-images.githubusercontent.com/31922389/120738349-b02d7700-c52a-11eb-9714-b3e7b438cb66.png">![스크린샷 2021-06-04 오전 10.26.54](/Users/superyodi/Library/Application Support/typora-user-images/스크린샷 2021-06-04 오전 10.26.54.png)
+<img width="539" alt="스크린샷 2021-06-04 오전 10 26 54" src="https://user-images.githubusercontent.com/31922389/120738349-b02d7700-c52a-11eb-9714-b3e7b438cb66.png">
 
 
 
