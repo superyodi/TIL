@@ -278,9 +278,21 @@ CPU가 바라보는 주소는 logical address다.
 
 주소공간의 크기가 n인 프로세스를 메모리에 올릴때 물리적 메모리 내 가용 공간중 어떤 위치에 올릴것인지 결정
 
++ First-fit
+  + 크기가 n이상인 것 중 최초로 발견되는 hole에 할당
++ Best-fit
+  + 크기가 n이상인 **가장 작은 hole을 찾아서 할당**
+  + hole들의 리스트가 크기순으로 정렬되지 않은 경우 모든 hole들의 리스트들을 탐색해야 함
+  + 많은 수의 아주 작은 hole들이 생성됨 
++ Worst-fit
+  + 가장 큰 hole에 할당
+  + 역시 모든 hole 리스트를 탐색해야 함
+  + 상대적으로 아주 큰 hole들이 생성됨 
++ *First-fit, Best-fit이 Worst-fit 보다 속도와 공간 이용률 측면에서 효과적인 것으로 알려짐*
 
 
-<img width="908" alt="스크린샷 2021-04-27 오후 9 07 27" src="https://user-images.githubusercontent.com/31922389/116403788-f6772280-a868-11eb-83e5-db70f4a91887.png">
+
+
 
 
 
