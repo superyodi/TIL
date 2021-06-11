@@ -22,5 +22,4 @@
 + [Problem Solving](https://github.com/superyodi/TIL/tree/master/problem-solving)
 
 
----
-+ [데일리 리포트](https://github.com/superyodi/TIL/tree/master/daily-report)
+
